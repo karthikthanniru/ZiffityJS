@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Question1
+        </title>
+        <script>
+            var integerNumber=parseInt(prompt("enter the number"))
+            function fun(integerNumber)
+            {
+              if(integerNumber==0)
+              {
+                return 1
+              }
+              else{
+                return integerNumber*(fun(integerNumber-1))
+              }
+            }
+            document.write(fun(integerNumber))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
