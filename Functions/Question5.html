@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+Question4
+        </title>
+        <script>
+            var originalString = prompt("enter a sentence")
+            function fun(originalString)
+            {
+var words = originalString.split(" ")
+for (var i = 0; i < words.length; i++) {
+  words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+var modifiedString = words.join(" ");
+
+return modifiedString
+
+}
+            }
+document.write(modifiedString)
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

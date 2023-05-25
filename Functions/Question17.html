@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Question17
+        </title>
+        <script>
+            var inputString = prompt("Enter the string");
+            var answer = (inputString) => {
+                var occureneArray = [];
+                for (var i = 0; i < inputString.length; i++) {
+                    var count = 0;
+                    for (var j = 0; j < inputString.length; j++) {
+                        if (inputString[i] == inputString[j]) {
+                            count++;
+                        }
+                    }
+                    occureneArray.push(count);
+                }
+                return occureneArray;
+            }
+            document.write(answer(inputString));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

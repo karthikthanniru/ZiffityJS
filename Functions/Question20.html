@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+question
+    </title>
+    <script>
+        var numberId=parseInt(prompt("enter the id number"))
+       function randomNumber(numberId)
+{
+var text = "";
+var charList = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for(var i=0; i < numberId; i++ )
+{  
+text += charList.charAt(Math.floor(Math.random() * charList.length));
+}
+return text;
+}
+
+document.write(randomNumber(numberId))
+    </script>
+</head>
+</html>

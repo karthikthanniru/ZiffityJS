@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Question25
+        </title>
+        <script>
+            var countryName=["Australia","Germany","sdhskdjhsdkhjdsf sdfhjsdfksjhf","unitedstatesOfAmerica"]
+            function fun(countryName)
+            {
+                var index=0
+                var count=0
+                for(var i=0;i<countryName.length;i++)
+                {
+                    if(countryName[i].length>count)
+                    {
+                        count=countryName[i].length
+                        index=i
+                    }
+                }
+                return index
+            }
+            document.write(fun(countryName))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
