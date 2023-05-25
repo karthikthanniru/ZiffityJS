@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+    <title>Question23</title>
+    <script>
+        var arrayOne=[1,2,3]
+        var arrayTwo=[100,2,1,10]
+        var finalArray=[]
+        for(var i=0;i<arrayTwo.length;i++)
+       {
+        var count=0
+        for(var j=0;j<arrayOne.length;j++)
+        {
+            if(arrayTwo[i]==arrayOne[j])
+            {
+                count++
+            }
+        }
+        if(count==0)
+        {
+            arrayOne.push(arrayTwo[i])
+        }
+       }
+       document.write(arrayOne)
+
+
+    </script>
+    </head>
+</html>
