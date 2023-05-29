@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Question9
+        </title>
+        <script>
+            var inputString=prompt("enter the string")
+            var answer=(inputString)=>
+            {
+                var duplicateArray=inputString.split(" ")
+                var output=""
+                for(var items in duplicateArray)
+                {
+                    output=output+duplicateArray[items][0].toUpperCase()+duplicateArray[items].slice(1)+" "
+                }
+                return output
+
+            }
+            document.write(answer(inputString))
+        </script>
+    </head>
+</html>

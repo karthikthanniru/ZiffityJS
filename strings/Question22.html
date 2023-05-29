@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Question22
+        </title>
+        <script>
+            var inputString=prompt("Enter the string")
+            var char=prompt("enter the character")
+            var side=prompt("enter the a for after and b for befor")
+            var answer=(inputString,char,side)=>{
+                if(side=='a')
+                {
+                    var index=0
+                    for(var i=0;i<inputString.length;i++)
+                    {
+                        if(inputString[i]==char)
+                        {
+                            index=i
+                            break
+                        }
+
+                    }
+                    return inputString.substring(0,index)
+                }
+                else
+                {
+                    
+                    var index=0
+                    for(var i=0;i<inputString.length;i++)
+                    {
+                        if(inputString[i]==char)
+                        {
+                            index=i
+                            break
+                        }
+
+                    }
+                    return inputString.substring(index,inputString.length)
+                }
+            }
+            document.write(answer(inputString,char,side))
+        </script>
+    </head>
+</html>

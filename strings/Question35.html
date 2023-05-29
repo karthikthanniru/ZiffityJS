@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Question35
+        </title>
+        <script>
+            var inputString=prompt("Enter the string")
+            var answer=(inputString)=>{
+                var output=""
+                for(var i=0;i<inputString.length;i++)
+                {
+                    if(inputString[i]=='>' && inputString[i+1]!='<')
+                    {
+                        for(var j=i+1;j<inputString.length;j++)
+                        {
+                            if(inputString[j]=='<')
+                            {
+                                break
+                            }
+                            else
+                            {
+                               output=output+inputString[j]
+                            }
+                        }
+
+                    }
+                }
+                return output
+            }
+           document.write(answer(inputString)) 
+        </script>
+
+    </head>
+</html>

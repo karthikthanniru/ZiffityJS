@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Question45</title>
+        <script>
+            var number=parseInt(prompt("Enter the number"))
+            function answer(number)
+            {
+            if(number%10==4 || number%10==5 || number%10==6|| number%10==7|| number%10==8|| number%10==9|| number%10==10)
+            {
+                return (number+"th")
+            }
+            else if(number%10==3)
+            {
+                return (number+"rd")
+            }
+            else if(number%10==2)
+            {
+               return (number+"nd")
+            }
+            else if(number%10==1)
+            {
+                return (number+"st")
+            }
+            else
+            {
+              return ("")
+            }
+        }
+        document.write(answer(number))
+        </script>
+    </head>
+</html>

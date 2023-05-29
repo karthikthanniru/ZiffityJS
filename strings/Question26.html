@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Question26</title>
+        <script>
+            var originalString=prompt("Enter the string")
+            var subString=prompt("Enter the String")
+            var answer=(originalString,subString)=>{
+                var len=subString.length
+                var index=originalString.search(subString)
+                var result=originalString.substring(0,index)+originalString.substring(index+len,originalString.length)
+                return result
+
+            }
+            document.write(answer(originalString,subString))
+            
+        </script>
+    </head>
+</html>

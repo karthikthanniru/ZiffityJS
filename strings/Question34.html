@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Question34
+        </title>
+        <script>
+            var originalString=prompt("Enter the string")
+            function titleCase(originalString)
+            {
+                var words=originalString.split(" ")
+                var output=""
+                for(var i=0;i<words.length;i++)
+                {
+                    output=output+words[i].charAt(0).toUpperCase()+words[i].substring(1)+" "
+                }
+                return output
+            }
+            document.write(titleCase(originalString))
+        </script>
+    </head>
+</html>

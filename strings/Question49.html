@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>
+        question49
+    </title>
+    <script>
+        var len=parseInt(prompt("enter the number"))
+        function guid(len) {
+        var arr = [],
+            alphabetS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',
+            charlen = alphabetS.length,
+            length = len || 32;
+            
+        for (var i = 0; i < length; i++) {
+            arr[i] = alphabetS.charAt(Math.floor(Math.random() * charlen));
+        }
+        
+        return arr.join('');
+    }
+    document.write(guid(len))
+    </script>
+  </head>  
+</html>

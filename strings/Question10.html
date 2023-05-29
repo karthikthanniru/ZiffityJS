@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Question10
+        </title>
+<script>
+    var inputString=prompt("Enter the string")
+    var answer=(inputString)=>{
+        return   inputString.replace(/([a-z]+)|([A-Z]+)/g), (match,char)=>{char?match.toUpperCase():match.toLowerCase()}
+      
+    }
+    document.write(answer(inputString))
+</script>
+    </head>
+<body>
+
+</body>
+</html>

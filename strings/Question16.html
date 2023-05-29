@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Question16
+        </title>
+        <script>
+            var inputString=prompt("Enter the string")
+            var countNumber=parseInt(prompt("enter the number"))
+            var answer=(inputString,countNumber)=>{
+                var output=""
+                if(countNumber==0 || countNumber=="")
+                {
+                    return inputString
+                }
+                else
+                {
+                   
+                       var output=inputString.slice(0,countNumber)
+                       return output
+                       
+                }
+               
+                return output
+
+            }
+            document.write(answer(inputString,countNumber))
+        </script>
+    </head>
+</html>

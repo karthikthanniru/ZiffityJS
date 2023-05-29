@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Question31
+        </title>
+        <script>
+            var string = prompt("Enter the string");
+            if (string !== null) {
+                var answer = (string) => {
+                    var output = "";
+                    for (var i = 0; i < string.length; i++) {
+                        if (string[i] == '>') {
+                            output = output + "&gt;";
+                        } else if (string[i] == '<') {
+                            output = output + "&lt;";
+                        } else if (string[i] == `'`) {
+                            output = output + "&quot;";
+                        } else if (string[i] == `"`) {
+                            output = output + "&amp;";
+                        } else {
+                            output = output + string[i];
+                        }
+                    }
+                    return output;
+                };
+                document.write(answer(string));
+            }
+        </script>
+    </head>
+</html>

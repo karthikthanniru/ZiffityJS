@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Question46
+        </title>
+        <script>
+            var inputString=prompt("enter the strin")
+            var checkString=prompt("enter the checking string")
+            var answer=(inputString,checkString)=>{
+                var len=checkString.length
+                var secondLen=inputString.length
+                if(inputString.substring(secondLen-len,secondLen)==checkString)
+                {
+                    return true
+                }
+                else
+                {
+                    return false
+                }
+
+            }
+            document.write(answer(inputString,checkString))
+        </script>
+    </head>
+</html>

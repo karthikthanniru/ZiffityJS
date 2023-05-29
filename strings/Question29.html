@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Question29</title>
+        <script>
+            var inputString = prompt("Enter the string");
+            var findString = prompt("Enter the check string");
+            
+            var answer = (inputString, findString) => {
+                var regex = new RegExp(findString, 'gi');
+                var matches = inputString.match(regex);
+                return matches ? matches.length : 0;
+            };
+            
+            document.write(answer(inputString, findString));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

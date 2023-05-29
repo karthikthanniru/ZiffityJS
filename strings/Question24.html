@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Question24
+        </title>
+        <script>
+            var originalString=prompt("Enter the string")
+            var integerNumber=parseInt(prompt("Enter the count number"))
+            var answer=(originalString,integerNumber)=>{
+                var words=originalString.split(" ")
+                var output=""
+                for(var i=0;i<integerNumber;i++)
+                {
+                    output=output+words[i]+" "
+                }
+                return output
+            }
+            document.write(answer(originalString,integerNumber))
+
+        </script>
+    </head>
+</html>

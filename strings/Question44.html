@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Question41
+        </title>
+        <script>
+            var originalString=prompt("Enter the string")
+            var indexNumber=prompt("enter the number")
+            var answer=(originalString,indexNumber)=>{
+                var output="false"
+             for(var i=0;i<originalString.length;i++)
+             {
+                if(i==indexNumber)
+                {
+                    if(originalString[i].toLowerCase()==originalString[i])
+                    {
+                        output="true"
+                    }
+                    break
+                }
+                
+             }
+             return output
+            }
+            document.write(answer(originalString,indexNumber))
+
+        </script>
+    </head>
+</html>

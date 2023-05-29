@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Question18</title>
+    <script>
+        var inputString=prompt("Enter the String")
+        var searchString=prompt("Enter the searchString")
+        var regex = new RegExp(searchString, "g");
+        var count=(inputString.match(regex) ||[]).length
+        document.write(count)
+    </script>
+    </head>
+</html>

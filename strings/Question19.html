@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Question19
+        </title>
+        <script>
+            var inputString=prompt("Enter the link")
+            var answer=(inputString)=>{
+                var output=""
+                for(var i=0;i<inputString.length;i++)
+                {
+                    if(inputString[i]==`<`)
+                    {
+                        output=output+"&lt;"
+                    }
+                    else if(inputString[i]==`>`)
+                    {
+                        output=output+"&gt;"
+                    }
+                    else if(inputString[i]==`"`)
+                    {
+                        output=output+"&qot;"
+                    }
+                    else
+                    {
+                        output=output+inputString[i]
+                    }
+                }
+                return output
+
+            }
+          console.log(answer(inputString))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

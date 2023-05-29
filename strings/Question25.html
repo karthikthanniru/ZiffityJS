@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Question25
+        </title>
+        <script>
+            var originalString=prompt('Enter the string')
+            var answer=(originalString)=>{
+                var duplicateArray=originalString.split('')
+                var sortedArray=duplicateArray.sort()
+                var returnArray=""
+                for(var i=0;i<sortedArray.length;i++)
+                {
+                    returnArray=returnArray+sortedArray[i]
+                }
+                return returnArray
+
+                
+            }
+            document.write(answer(originalString))
+        </script>
+    </head>
+</html>

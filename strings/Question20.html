@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Question20
+        </title>
+        <script>
+            var inputString=prompt("Enter the string")
+            var secondString=parseInt(prompt("Enter the number"))
+            var countNumber=prompt("Enter the count")
+            var answer=(inputString,secondString,countNumber)=>{
+              if(countNumber=='l')
+              {
+                var output=(secondString.toString())
+                var len=output.length
+                return inputString.substring(0,inputString.length-len)+output
+              }
+              else{
+                var output=(secondString.toString())
+                var len=output.length
+                return output+inputString.substring(len)
+              }
+            }
+            document.write(answer(inputString,secondString,countNumber))
+        </script>
+    </head>
+</html>
