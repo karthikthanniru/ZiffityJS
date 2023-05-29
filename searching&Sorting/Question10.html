@@ -1,0 +1,28 @@
+<html>
+    <head><title>Question10</title>
+		<script>
+			function gnomeSort(arr, n)
+				{
+					let index = 0;
+				
+					while (index < n) {
+						if (index == 0)
+							index++;
+						if (arr[index] >= arr[index - 1])
+							index++;
+						else {
+							let temp = 0;
+							temp = arr[index];
+							arr[index] = arr[index - 1];
+							arr[index - 1] = temp;
+							index--;
+						}
+					}
+					return arr
+				}
+					let arr = [34, 2, 10, -9 ];
+					document.write(gnomeSort(arr, arr.length))		
+			</script>
+			
+    </head>
+</html>

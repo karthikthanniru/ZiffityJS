@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Question13</title>
+        <script>
+            var  arr=[3,3,1,0,7,9,5,8,2]
+            findMaxIndex = (arr, k) => {
+
+let max = -Infinity 
+let maxIndex = 0
+
+for(let i = 0; i < k; i++){
+    if(arr[i] >= max){
+      max = arr[i]
+      maxIndex = i
+    }
+   
+}
+
+return maxIndex
+
+
+}
+
+flip = (arr, k) => {
+
+    let i = 0
+   
+    while (i < k) {
+        let temp = arr[k]
+        arr[k] = arr[i]
+        arr[i] = temp
+        i++
+        k--
+    }
+return arr
+}
+
+pancakeSort = (arr) => {
+     let i = arr.length
+     while(i > 1){
+       let maxIndex = findMaxIndex(arr, i)
+       if(maxIndex !== i - 1){
+         flip(arr, maxIndex)
+         flip(arr, i - 1)
+       }
+       i--
+     }
+return arr
+}
+document.write(pancakeSort(arr))
+        </script>
+    </head>
+</html>

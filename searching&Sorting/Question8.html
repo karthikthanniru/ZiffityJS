@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            question8
+        </title>
+        <script>
+            var arr=[1,5,8,9,5,4,0,9,8]
+            var cockTail=(arr)=>{
+                var start=0,end=arr.length,swapped=true
+                while(swapped)
+                {
+                    swapped=false
+                    for(var i=start;i<end-1;i++)
+                    {
+                        if(arr[i]>arr[i+1])
+                        {
+                            var temp=arr[i]
+                            arr[i]=arr[i+1]
+                            arr[i+1]=temp
+                            swapped=true
+                        }
+                    }
+                    end--
+                    if(!swapped)
+                    {
+                        break
+                    }
+                    for(var i=end-1;i>start;i--)
+                    {
+                        if(arr[i-1]>arr[i])
+                        {
+                            var temp=arr[i]
+                            arr[i]=arr[i-1]
+                            arr[i-1]=temp
+                            swapped=true
+                        }
+                    }
+                    start++
+                }
+                return arr
+            }
+            document.write(cockTail(arr))
+        </script>
+    </head>
+</html>
