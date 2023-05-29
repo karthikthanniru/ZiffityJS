@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question10</title>
+    <script>
+        function Multiple() {
+            var numberOne = parseInt(document.getElementById("1stNumber").value);
+            var numberTwo = parseInt(document.getElementById("2ndNumber").value);
+          document.getElementById("TheResult").innerHTML=numberOne*numberTwo
+        }
+        
+        function divide() {
+            var numberOne = parseInt(document.getElementById("1stNumber").value);
+            var numberTwo = parseInt(document.getElementById("2ndNumber").value);
+            document.getElementById("TheResult").innerHTML=numberOne/numberTwo        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="1stNumber">1st Number:</label>
+        <input type="number" id="1stNumber">
+        <br><br>
+        <label for="2ndNumber">2nd Number:</label>
+        <input type="number" id="2ndNumber">
+        <br><br>
+        <input type="button" onclick="Multiple()" value="Multiply">
+        <input type="button" onclick="divide()" value="Divide">
+    </form>
+    <p>The Output is:</p>
+    <p id="TheResult"> </p>
+</body>
+</html>
