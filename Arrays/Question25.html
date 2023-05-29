@@ -1,0 +1,62 @@
+<!-- <html>
+    <head>
+        <title>
+            Question25
+        </title>
+        <script>
+            var library=[
+                {
+                author: 'Bill Gates', 
+                title: 'The Road Ahead',
+                 libraryID:1254
+                },
+                 { 
+                    author: 'Steve Jobs', 
+                    title: 'Walter Isaacson',
+                    libraryID: 4264
+                },
+                { 
+                    author: 'Suzanne Collins',
+                     title: 'Mockingjay: The Final Book of The Hunger Games',
+                      libraryID: 3245
+                    }
+                ]
+                var modifiedArray=library.sort((a,b)=>(a.title<b.title)?1:(a.title>b.title)?-1:0)
+                document.write(modifiedArray)
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question25</title>
+    </head>
+    <body>
+        <script>
+            var library = [
+                {
+                    author: 'Bill Gates', 
+                    title: 'The Road Ahead',
+                    libraryID: 1254
+                },
+                { 
+                    author: 'Steve Jobs', 
+                    title: 'Walter Isaacson',
+                    libraryID: 4264
+                },
+                { 
+                    author: 'Suzanne Collins',
+                    title: 'Mockingjay: The Final Book of The Hunger Games',
+                    libraryID: 3245
+                }
+            ];
+            
+            var modifiedArray = library.sort((a, b) => (a.title < b.title) ? 1 : (a.title > b.title) ? -1 : 0);
+            console.log(modifiedArray)
+        </script>
+    </body>
+</html>

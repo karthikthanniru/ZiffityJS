@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            question19
+        </title>
+        <script>
+            var arrayOne=[1,0,2,3,4]
+            var arrayTwo=[3,5,6,7,8,13]
+            var mergedArray=[]
+            if(arrayOne.length>arrayTwo.length)
+            {
+                for(var i=0;i<arrayOne.length;i++)
+                {
+                    var number=arrayOne[i]+(arrayTwo[i] || 0)
+           mergedArray.push(number)
+                }
+            }
+            else
+            {
+                for(var j=0;j<arrayTwo.length;j++)
+                {
+                    var number=(arrayOne[j]|| 0)+arrayTwo[j]
+                   mergedArray.push(number)
+                }
+            }
+            document.write(mergedArray)
+        </script>
+    </head>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Question6
+        </title>
+        <script>
+            var firstNumber=parseInt(prompt("Enter the First number"))
+            var finalNumer="";
+            while(finalNumer!=0)
+            {
+                var temp=firstNumber%10
+                firstNumber=Math.floor(firstNumber/10)
+                if(temp%2==0 && firstNumber%2==0)
+                {
+                    finalNumer=finalNumber+(temp+"-"+firstNumber)
+                    console.log(finalNumer)
+                }
+                else
+                {
+                    finalNumer=finalNumer+(temp+finalNumer)
+                }
+            }
+            document.write(finalNumer)
+        </script>
+    </head>
+</html>

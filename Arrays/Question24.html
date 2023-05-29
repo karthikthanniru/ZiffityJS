@@ -1,0 +1,17 @@
+<html>
+    <head>
+      <title>Question24</title>
+      <script>
+        var arr=[NaN,0,15,false,-22,"",undefined,47,null]
+        var modifiedArray=[]
+        for(var i=0;i<arr.length;i++)
+        {
+            if(arr[i]!=" " || arr[i]!='0' || arr[i]!=NaN || arr[i]!=false ||arr[i]!=null ||arr[i]!=undefined)
+            {
+                modifiedArray.push(arr[i])
+            }
+        }
+        document.write(modifiedArray)
+      </script>  
+    </head>
+</html>
