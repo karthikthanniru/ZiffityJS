@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Question6
+        </title>
+        <script>
+var arrays=[22,43,2,24,432,432,243,2332,23,232]
+function fun(arrays)
+{
+    for(var i=0;i<arrays.length;i++)
+    {
+for(var j=0;j<(arrays.length-i-1);j++)
+{
+if(arrays[j]<arrays[j+1])
+{
+    var temp=arrays[j]
+    arrays[j]=arrays[j+1]
+    arrays[j+1]=temp
+}
+}
+    }
+    return arrays
+
+}
+document.write(fun(arrays))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
