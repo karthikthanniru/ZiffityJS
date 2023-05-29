@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            question19
+        </title>
+        <script>
+            var limitNumer=parseInt(prompt("enter the number"))
+            var array=[20,30,40,202,40,32]
+            var answer=(array,limitNumer)=>
+            {
+                var modifiedArray=[]
+                for(var i=0;i<array.length;i++)
+                {
+                    if(array[i]>=limitNumer)
+                    {
+                        modifiedArray.push(array[i])
+                    }
+                }
+                return modifiedArray
+            }
+            document.write(answer(array,limitNumer))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

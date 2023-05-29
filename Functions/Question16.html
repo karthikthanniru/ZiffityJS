@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Question16
+        </title>
+        <script>
+var inputString=prompt("enter the sentence")
+var answer=(inputString)=>
+{
+    var newArray=[]
+    var modifiedArray=[]
+    for(var i=inputString.length-1;i>=0;i--)
+    {
+        var count=0
+        for(var j=i;j>=0;j--)
+        {
+         if(inputString[i]==inputString[j])
+        {
+    count++;
+          }
+
+        }
+        newArray.push(count)
+    }
+    for(var i=newArray.length-1;i>=0;i--)
+    {
+        if(newArray[i]==1)
+        {
+            modifiedArray.push(inputString[inputString.length-i-1])
+        }
+    }
+    return modifiedArray
+}
+document.write(answer(inputString))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

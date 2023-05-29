@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Question2</title>
+        <script>
+            var stringName = prompt("Enter the palindrome string");
+            var answer = (stringName) => {
+                var palindromes=0
+                for (var i = 0, j = stringName.length - 1; i < Math.floor(stringName.length/2) && i>=0; i++, j--) {
+                 if(stringName[i]==stringName[j])
+                 {
+palindromes++
+                 }
+                }
+                if(palindromes==Math.floor(stringName.length/2))
+                {
+                    return true
+                }
+                else
+                {
+                    return false
+                }
+            };
+          document.write(answer(stringName))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
